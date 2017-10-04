@@ -1,0 +1,80 @@
+	body{
+		margin-left: 20px;
+		margin-top: 20px;
+		margin-right: 20px;
+	}
+
+
+h1{
+  
+  }
+  
+  .important{
+	  font-size: large;  
+  }
+  
+  footer {
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px;
+	background-color: #f0f0f0;
+    color: #666;
+    width: 100%;
+   }
+  
+  .header h3 {
+	margin: 0px;
+  }
+  
+  .header {
+	  width: 100%;
+	  background-color: brown;
+	  margin-bottom: 10px;
+  }
+  
+  .header tr td {
+	  text-align: center;
+  }
+  
+  .header ul li {
+	  list-style: none;
+  }
+  
+  .menu {
+    width: 140px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+   }
+   
+   .small-menu {
+    list-style: none;
+    position: absolute;
+    display: none;
+    margin-left: 100px;
+    margin-top: -2em;
+   }
+   
+   li a {
+    display: block; /* Ссылка как блочный элемент */
+    padding: 5px;
+    text-decoration: none;
+    color: #666; 
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-bottom: none; 
+   }
+   
+   li a:hover {
+    color: #ffe; 
+    background-color: #5488af;
+   }
+   
+   li:hover ul { 
+    display: block;
+   }
+   
+   .brd {
+    border-bottom: 1px solid #ccc;
+   }
