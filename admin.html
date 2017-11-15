@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="manifest.cache">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,9 +42,10 @@
   </div>
 <form>
    <input type="file" name="photo" multiple accept="image/*,image/jpeg"/>
-   <input name="emailaddress" placeholder="Введіть заголовок" class="textbox" type="email" required />
-   <textarea rows="4" cols="50" name="subject" placeholder="Введіть коментар" class="message" required></textarea>
-   <input name="submit" class="button" type="submit" value="Відправити новину" />
+   <textarea ID="Head" rows="1" cols="40" name="subject" placeholder="Введіть заголовок" class="message" required></textarea>
+   <textarea ID="Small" rows="1" cols="50" name="subject" placeholder="Введіть короткий опис новини" class="message" required></textarea>
+   <textarea ID="Full" rows="4" cols="50" name="subject" placeholder="Введіть повний опис новини" class="message" required></textarea>
+   <input onclick="addNews()" name="submit" class="button" type="submit" value="Відправити новину" />
    
 </form>
 
@@ -57,7 +58,9 @@
     </div>
   </div>
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
+	<script src="js/Admin.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="manifest.cache">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="fonts/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/Rewievs.js"></script>
 </head>
 <body>
    <div class="navbar navbar-inverse navbar-fixed-top">
@@ -40,26 +41,41 @@
       </div>
     </div>
   </div>
-  <div class = "blog-post-meta"><h3><b>Вася Пупкін</b></h3>
-    <p class="blog-post-meta1">11.11.2017, 14:00</p>
-        <p>Положення актів цивільного, банківського законодавства України та
-        міжнародних договорів щодо правового регулювання надання кредитних,
-        депозитних, страхових, інших послуг фінансовими установами;дискусійні положення цивільно-правової доктрини з питань
-        укладення, виконання та припинення відповідних договорів про надання
-        фінансових послуг</p><hr align="center" width="500" size="2" color="#ff0000" />
- <h3><b>Вася Пупкін</b></h3>
-    <p class="blog-post-meta1">11.11.2017, 14:00</p>
-        <p>Положення актів цивільного, банківського законодавства України та міжнародних договорів щодо правового регулювання надання кредитних, депозитних, страхових, інших послуг фінансовими установами;дискусійні положення цивільно-правової доктрини з питань
-        укладення, виконання та припинення відповідних договорів про надання фінансових послуг</p><textarea rows="4" cols="50" name="subject" placeholder="Новий відгук..." class="message" required></textarea>
-   <input name="submit" class="button" type="submit" value="Відправити" /></div>
-     <div id="f">
-    <div class="container">
-      <div class="row centered">
-        <a>© 2016–2017 
-За всіма питаннями пишить за адресою vladglushko1006@gmail.com</a>
-      </div>
-    </div>
+	<div class = "blog-post-meta" ID="Field">
+		<div class="feedback">
+			<h3>Олександр Рагулін</h3>
+			<p class="blog-post-meta1">11.11.2017, 14:00</p>
+			<p>Дякую за прекрасний сайт. Зручний і адаптивний.</p>
+			<hr align="center" width="500" size="2" color="#ff0000" />
+		</div>
+		<div class="feedback">
+			<h3>Вася Пупкін</h3>
+			<p class="blog-post-meta1">11.11.2017, 14:00</p>
+			<p>Vіжнародні акти, чинне господарське законодавство України, роз’яснення та правові позиції вищих судових інстанцій, судова практика у конкретних справах.</p>
+			<hr align="center" width="500" size="2" color="#ff0000" />
+		</div>
+	</div>
+
+  <div ID="9" style="margin-left: 50px; margin-right: 50px; margin-bottom: 50px">  
+      <textarea ID="Name" rows="1" cols="50" name="subject" placeholder="Ім'я" class="message" required></textarea>
+      <textarea ID="Check" rows="4" cols="50" name="subject" placeholder="Новий відгук..." class="message" required></textarea>
+      <input ID="123" onclick="AddComment()" name="submit" class="button" type="submit" value="Відправити"/>
   </div>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<div id="f">
+		<div class="container">
+		<div class="row centered">
+			<a>© 2016–2017 
+			За всіма питаннями пишить за адресою vladglushko1006@gmail.com</a>
+			</div>
+		</div>
+	</div>
+	
+	
+  <script src="js/checkLocalStorage.js"></script>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-</body></html>
+</body>
+</html>
